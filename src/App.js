@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
+let name = "Prabin";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <div className="blank">
+        <nav>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact US</li>
+        </nav>
+      </div>
+      <div className="container">
+        <h1>Hello {name}</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Bootstrap is a free, open-source CSS framework for web development,
+          used to create responsive, mobile-first websites and web applications.
+          It provides a collection of pre-designed templates, CSS styles, and
+          JavaScript components that help developers efficiently and effectively
+          create visually appealing and consistent interfaces.{" "}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+    </>
   );
 }
 
